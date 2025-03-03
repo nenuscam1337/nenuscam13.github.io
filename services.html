@@ -1,23 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <ul>
-  <li><a href="index.html">Главная страница</a></li>
-  <li><a href="about.html">О нас</a></li>
-  <li><a href="services.html">Услуги</a></li>
-  <li><a href="contact.html">Контакты</a></li>
-</ul>
   <title>Услуги</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <nav>
-    </nav>
-    <h1>Услуги</h1>
-    <p>Список предоставляемых услуг:</p>
-    <img src="services.jpg" alt="Изображение услуг">
+    <div class="row">
+      <div class="col-md-3 left-panel">
+        <nav>
+          <ul>
+            <li><a href="index.html">Главная страница</a></li>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="services.html">Услуги</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col-md-6 main-content bg-success">
+        <h1>Услуги</h1>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Услуга</th>
+              <th>Описание</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Услуга 1</td>
+              <td>Описание услуги 1</td>
+            </tr>
+            <tr>
+              <td>Услуга 2</td>
+              <td>Описание услуги 2</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-md-3 right-panel bg-primary">
+        <p>Список предоставляемых услуг с описаниями</p>
+      </div>
+    </div>
   </div>
 </body>
 </html>
