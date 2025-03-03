@@ -1,58 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <!DOCTYPE html>
-<html>
-<body>
-</body>
-</html>
   <title>Главная страница</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <style>
     body {
       font-family: sans-serif;
-      background: #f0f0f0;
-    }
-    .container {
-      width: 80%;
-      margin: 20px auto;
-      border: 1px solid #ccc;
-      padding: 20px;
-    }
-    nav ul {
-      list-style-type: none;
-      padding: 0;
       margin: 0;
-      background-color: #333;
-      overflow: hidden;
-    }
-    nav li {
-      float: left;
-    }
-    nav li a {
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
-    nav li a:hover {
-      background-color: #111;
+      padding: 0;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <nav>
-      <ul>
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="about.html">О нас</a></li>
-        <li><a href="services.html">Услуги</a></li>
-        <li><a href="contact.html">Контакты</a></li>
-      </ul>
-    </nav>
-    <h1>Главная страница</h1>
-    <p>Наша компания самая лучшая в Рф </p>
-    <img src="placeholder.jpg" alt="Изображение главной страницы">
+    <div class="row">
+      <div class="col-md-3 left-panel">
+        <nav>
+          <ul>
+            <li><a href="index.html">Главная страница</a></li>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="services.html">Услуги</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col-md-6 main-content bg-success">
+        <h1>Главная страница</h1>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Заголовок 1</th>
+              <th>Заголовок 2</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ячейка 1</td>
+              <td>Ячейка 2</td>
+            </tr>
+            <tr>
+              <td>Ячейка 3</td>
+              <td>Ячейка 4</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-md-3 right-panel bg-primary">
+        <p>Добро пожаловать в (Название вашей компании)! ...</p>
+      </div>
+    </div>
   </div>
 </body>
 </html>
