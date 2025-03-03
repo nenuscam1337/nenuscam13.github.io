@@ -1,23 +1,50 @@
 <!DOCTYPE html>
 <html>
-<head> 
-  <ul>
-  <li><a href="index.html">Главная страница</a></li>
-  <li><a href="about.html">О нас</a></li>
-  <li><a href="services.html">Услуги</a></li>
-  <li><a href="contact.html">Контакты</a></li>
-</ul>
+<head>
   <title>О нас</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <nav>
-    </nav>
-    <h1>О нас</h1>
-    <p>Наша компания была создана в 2018, мы ценим наших покупателей и всегда готовы помочь им</p>
-    <img src="about-us.jpg" alt="Изображение о нас">
+    <div class="row">
+      <div class="col-md-3 left-panel">
+        <nav>
+          <ul>
+            <li><a href="index.html">Главная страница</a></li>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="services.html">Услуги</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col-md-6 main-content bg-success">
+        <h1>О нас</h1>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>История</th>
+              <th>Миссия</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>История компании</td>
+              <td>Наша миссия</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-md-3 right-panel bg-primary">
+        <p>История компании, миссия, ценности</p>
+      </div>
+    </div>
   </div>
 </body>
 </html>
